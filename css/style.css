@@ -69,7 +69,24 @@ header label[for="menu"] span{ display: block; height: 2px; background: #fff; wi
 .s2 :is(p,a){ color: #fff; }
 
 
-.info{ padding: 50px 0; }
+.info{ margin: 50px 0; text-align: center; }
+.info p:first-child{ font: 600 24px var(--ff);} 
+.info p:last-child{ font: 500 14px var(--ff);} 
+.text{ opacity: 0.6; font: 400 14px/25px var(--ff); margin: 20px 0 30px;}
+.list{ list-style: disc inside; font: 500 14px/40px var(--ff); }
+
+.tabs{ margin-top: 40px; }
+.tabs ul{ gap: 20px; }
+.tabs .vertical{ display: block; width: 85px; height: 300px; border: 2px solid transparent;  writing-mode: sideways-lr; font: 500 24px/85px var(--ff); color: #132577; text-align: center; border-radius: 5px; background: #FFF; box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.10);}
+.tabs .active .vertical{ border-color: #132577;}
+.tabs .active .content{ display: block; margin-left: 20px;}
+.tabs .more{ display: inline-block; width: 184px; line-height: 51px; background: #132577; color: #fff; text-align: center; border-radius: 5px;}
+.content{ display: none; }
+.content img{ margin-right: 20px; float: left;}
+.content h3{ font: 500 24px var(--ff);}
+
+
+
 
 
 .wrap-3{ background: var(--db); color: #fff; padding: 6rem 0; }
