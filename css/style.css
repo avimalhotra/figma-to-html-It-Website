@@ -72,7 +72,8 @@ header label[for="menu"] span{ display: block; height: 2px; background: #fff; wi
 .info{ margin: 50px 0; text-align: center; }
 .info p:first-child{ font: 600 24px var(--ff);} 
 .info p:last-child{ font: 500 14px var(--ff);} 
-.text{ opacity: 0.6; font: 400 14px/25px var(--ff); margin: 20px 0 30px;}
+.text{  font: 400 14px/25px var(--ff); margin: 20px 0 30px;}
+.op6{ opacity: .6; }
 .list{ list-style: disc inside; font: 500 14px/40px var(--ff); }
 
 .tabs{ margin-top: 40px; }
@@ -85,16 +86,31 @@ header label[for="menu"] span{ display: block; height: 2px; background: #fff; wi
 .content img{ margin-right: 20px; float: left;}
 .content h3{ font: 500 24px var(--ff);}
 
+.review{ text-align: center; margin-top: 40px; }
+.review .rbody{ border-radius: 5px; background: #FFF; box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.10); padding: 60px 64px 0;}
+.review .rbody p{ margin: 20px 0;}
+.review .rbody .reviewer{ transform: translateY(34px); display: inline-block; }
+.ratings span{ color: #7d7d7d; font-size: 20px; }
+.ratings span.fill{ color: #FFC107; }
+.review h3{ font: 500 16px var(--ff);}
+.review h3 + p{  font: 400 14px var(--ff); }
+.review .rfooter{ margin-top: 54px;}
+
+
+
+
 
 
 
 
 .wrap-3{ background: var(--db); color: #fff; padding: 6rem 0; }
+.projects a{ display: block; width: 214px; line-height: 51px; color: #fff; background: #132577; text-align: center; border-radius: 5px; margin-top: 30px;}
+
 
 
 /* responsive */
 @media screen and (max-width:1220px){
-    
+    .review .rbody{ padding: 30px 34px 0;}
 }
 
 
@@ -112,6 +128,8 @@ header label[for="menu"] span{ display: block; height: 2px; background: #fff; wi
     .col-t-10{ grid-column: span 10;}
     .col-t-11{ grid-column: span 11;}
     .col-t-12{ grid-column: span 12;} 
+    .tabs .vertical{ width: 40px; line-height: 40px; height: 40px; }
+    .review .rbody{ padding: 30px 14px 0;}
     
 }
 @media screen and (max-width:787px){
@@ -120,6 +138,9 @@ header label[for="menu"] span{ display: block; height: 2px; background: #fff; wi
     header input[type="checkbox"]:checked + nav{ display: block; }
     header label[for="menu"]{ display: inline-block;  position: absolute; right: 1rem;}
     nav ul{ flex-flow: column; }
+    .tabs ul{ flex-flow: column; }
+    .tabs ul li{ flex-flow: column; }
+    .tabs .vertical{ width: 100%; writing-mode: horizontal-tb;}
 }
 @media screen and (max-width:460px){
     .col-p-1{ grid-column: span 1;}
